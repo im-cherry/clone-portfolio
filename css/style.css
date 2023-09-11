@@ -28,6 +28,9 @@
   --color-text1: var(--color-black1);
   --color-text2: var(--color-black2);
   --color-text3: var(--color-black3);
+
+  /* Size */
+  --size-max-width: 832px;
 }
 
 * {
@@ -82,6 +85,13 @@ button {
   border: 0;
   background-color: transparent;
   cursor: pointer;
+}
+
+/* Common */
+.max-container {
+  max-width: var(--size-max-width);
+  margin: 0 auto;
+  padding: 0 1.6rem;
 }
 
 /* Header */
@@ -144,7 +154,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 11.6rem;
+  padding-top: calc(56px + 6rem);
   padding-bottom: 10rem;
   background-color: var(--color-primary);
 }
@@ -180,4 +190,73 @@ button {
 
 .home__contact:hover {
   transform: scale(1.05);
+}
+
+/* About */
+#about {
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 12.8rem;
+  background-color: var(--color-white);
+}
+
+.about__title {
+  padding-bottom: 1.6rem;
+}
+
+.about__description {
+  padding-bottom: 4rem;
+}
+
+.about__majors {
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.about__major {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 2.8rem 1.6rem 0;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+}
+
+.about__major__icon {
+  font-size: 10rem;
+  color: var(--color-primary-variant);
+}
+
+.about__major__title {
+  font-family: "NEXON Gothic";
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.about__jobs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.about__job {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.about__job__image {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.about__job__name,
+.about__job__period {
+  font-size: 1.4rem;
+  text-align: left;
 }
