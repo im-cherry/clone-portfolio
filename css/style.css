@@ -87,6 +87,8 @@ button {
   border: 0;
   background-color: transparent;
   cursor: pointer;
+  font-family: inherit;
+  color: inherit;
 }
 
 /* Common */
@@ -240,7 +242,7 @@ button {
 
 .about__major__title {
   font-family: "NEXON Gothic";
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
@@ -340,4 +342,120 @@ button {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+}
+
+/* Works */
+#works {
+  padding-top: 10rem;
+  padding-bottom: 16rem;
+  text-align: center;
+  color: var(--color-white);
+  background-color: var(--color-primary-variant);
+}
+
+.works__title {
+  padding-bottom: 0.8rem;
+}
+
+.works__description {
+  padding-bottom: 4.8rem;
+}
+
+.works__categories {
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.works__category {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0.4rem 3.2rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+}
+
+.works__category:hover,
+.works__category.selected {
+  color: var(--color-text1);
+  background-color: var(--color-primary);
+}
+
+.works__category__count {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0.4rem;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-color: var(--color-accent-variant);
+  font-size: 1.2rem;
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms;
+}
+
+.works__category:hover .works__category__count,
+.works__category.selected .works__category__count {
+  top: -50%;
+  opacity: 1;
+}
+
+.works__projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.6rem;
+}
+
+.works__project {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.works__project__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.works__project__metadata {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 0.8rem;
+  display: flex;
+  gap: 0.8rem;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-black2);
+  transition: 300ms;
+}
+
+.works__project__metadata:hover {
+  opacity: 1;
+}
+
+.works__project__metadata__title {
+  position: relative;
+}
+
+.works__project__metadata__title::after {
+  content: "";
+  position: absolute;
+  bottom: -0.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 1px;
+  background-color: var(--color-accent-variant);
 }
