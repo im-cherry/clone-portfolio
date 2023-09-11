@@ -538,3 +538,43 @@ button {
 .testimonial__item__bubble__commenter__name:hover {
   text-decoration: underline;
 }
+
+/* Footer */
+#contact {
+  padding: 8rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--color-primary);
+}
+
+.contact__title {
+  padding-bottom: 3.2rem;
+}
+
+.contact__name {
+  padding-bottom: 1.6rem;
+}
+
+.contact__email {
+  padding-bottom: 3.2rem;
+}
+
+.contact__links {
+  padding-bottom: 3.2rem;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.contact__link__icon {
+  font-size: 3rem;
+}
+
+.contact__link:hover .contact__link__icon {
+  transform: scale(1.1);
+}
+
+.contact__copyright {
+  font-size: 1.4rem;
+  color: var(--color-text3);
+}
