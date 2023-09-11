@@ -459,3 +459,76 @@ button {
   height: 1px;
   background-color: var(--color-accent-variant);
 }
+
+/* Testimonial */
+#testimonial {
+  padding-top: 10rem;
+  padding-bottom: 16rem;
+  background-color: var(--color-white);
+  text-align: center;
+}
+
+.testimonial__title {
+  padding-bottom: 0.8rem;
+}
+
+.testimonial__description {
+  padding-bottom: 4rem;
+}
+
+.testimonial__items {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.testimonial__item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.testimonial__item__img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 100%;
+  background-color: var(--color-white);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.testimonial__item:nth-child(even) .testimonial__item__img {
+  order: 1;
+}
+
+.testimonial__item__bubble {
+  width: calc(100% - 140px - 1.6rem);
+  padding: 1.6rem;
+  border-radius: 5px;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-primary);
+  box-shadow: 5px 5px 0px 0px var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.testimonial__item__bubble__comment {
+  text-align: left;
+}
+
+.testimonial__item:nth-child(even) .testimonial__item__bubble__comment {
+  text-align: right;
+}
+
+.testimonial__item__bubble__commenter {
+  text-align: right;
+}
+
+.testimonial__item:nth-child(even) .testimonial__item__bubble__commenter {
+  text-align: left;
+}
+
+.testimonial__item__bubble__commenter__name {
+}
