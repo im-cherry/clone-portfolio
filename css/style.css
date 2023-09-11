@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/* Global */
+@font-face {
+  font-family: "NEXON Gothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* Colors */
+  --color-white: #fff;
+  --color-black1: rgba(0, 0, 0, 0.87);
+  --color-black2: rgba(0, 0, 0, 0.54);
+  --color-black3: rgba(0, 0, 0, 0.38);
+  --color-blue1: #8ac6ff;
+  --color-blue2: #bddeff;
+  --color-orange1: #ff8d57;
+  --color-orange2: #ffcfb8;
+
+  /* *App Colors */
+  --color-primary: var(--color-blue2);
+  --color-primary-variant: var(--color-blue1);
+  --color-accent: var(--color-orange2);
+  --color-accent-variant: var(--color-orange1);
+  --color-text1: var(--color-black1);
+  --color-text2: var(--color-black2);
+  --color-text3: var(--color-black3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-size: 62.5%;
+  color: var(--color-text1);
+  line-height: 1.6;
+}
+
+h2,
+h3 {
+  font-family: "NEXON Gothic";
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+p,
+a,
+span,
+li,
+button {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
