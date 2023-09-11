@@ -531,4 +531,10 @@ button {
 }
 
 .testimonial__item__bubble__commenter__name {
+  font-weight: 700;
+  color: var(--color-accent-variant);
+}
+
+.testimonial__item__bubble__commenter__name:hover {
+  text-decoration: underline;
 }
