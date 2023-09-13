@@ -50,6 +50,7 @@ html {
   font-size: 62.5%;
   color: var(--color-text1);
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 h1 {
