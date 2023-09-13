@@ -803,7 +803,12 @@ button {
     width: 100%;
     height: auto;
     gap: 0;
+    display: none;
     flex-direction: column;
+  }
+
+  .header__menu__items.open {
+    display: block;
   }
 
   .header__menu__items li {

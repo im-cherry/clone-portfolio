@@ -28,3 +28,15 @@ document.addEventListener("scroll", () => {
     arrowUp.style.bottom = "-50px";
   }
 });
+
+// Header__Menu - 햄버거 버튼 클릭 처리
+const headerMenu = document.querySelector(".header__menu__items");
+const headerToggle = document.querySelector(".header__toggle");
+headerToggle.addEventListener("click", () => {
+  headerMenu.classList.toggle("open");
+});
+
+// Header__Menu - 메뉴 클릭시 메뉴를 자동으로 닫기
+headerMenu.addEventListener("click", () => {
+  headerMenu.classList.remove("open");
+});
