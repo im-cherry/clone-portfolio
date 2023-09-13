@@ -10,10 +10,21 @@ document.addEventListener("scroll", () => {
   }
 });
 
-// Home - 아래로 스크롤시 투명하게 처리
+// Home - 페이지 아래로 스크롤시 투명하게 처리
 const home = document.querySelector(".home__container");
 const homeHeight = home.offsetHeight;
 
 document.addEventListener("scroll", () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+// Arrow up - 페이지 위로 스크롤시 투명하게 처리
+const arrowUp = document.querySelector(".arrow-up");
+
+document.addEventListener("scroll", () => {
+  if (window.scrollY > headerHeight) {
+    arrowUp.style.bottom = "32px";
+  } else {
+    arrowUp.style.bottom = "-50px";
+  }
 });

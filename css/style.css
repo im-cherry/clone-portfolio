@@ -715,6 +715,8 @@ button {
   bottom: 3.2rem;
   width: 100%;
   z-index: 1;
+  bottom: -50px;
+  transition: bottom 150ms ease-in;
 }
 
 .arrowUp__container {
