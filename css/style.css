@@ -511,6 +511,12 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.6rem;
+  transition: transform 200ms;
+}
+
+.works__projects.anim-out {
+  opacity: 0;
+  transform: scale(0);
 }
 
 .works__project {

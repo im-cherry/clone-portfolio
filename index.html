@@ -38,6 +38,7 @@
 
   <!-- JS -->
   <script type="module" src="src/main.js" defer></script>
+  <script type="module" src="src/projects.js" defer></script>
 </head>
 
 <body>
@@ -199,13 +200,25 @@
         <p class="works__description">저의 다양한 프로젝트를 볼 수 있는 공간입니다.</p>
 
         <ul class="works__categories">
-          <li><button class="works__category selected">All<span class="works__category__count">8</span></button></li>
-          <li><button class="works__category">Clone Coding<span class="works__category__count">8</span></button></li>
-          <li><button class="works__category">My Coding<span class="works__category__count">8</span></button></li>
+          <li>
+            <button class="works__category selected" data-category="all">
+              All<span class="works__category__count">8</span>
+            </button>
+          </li>
+          <li>
+            <button class="works__category" data-category="clone-coding">
+              Clone Coding<span class="works__category__count">3</span>
+            </button>
+          </li>
+          <li>
+            <button class="works__category" data-category="my-coding">
+              My Coding<span class="works__category__count">5</span>
+            </button>
+          </li>
         </ul>
 
         <ul class="works__projects">
-          <li class="works__project">
+          <li class="works__project" data-type="my-coding">
             <a href="#" target="_blank">
               <img class="works__project__img" src="images/projects/project1.jpg" alt="웹디자인기능사 자격증 프로젝트">
               <div class="works__project__metadata">
@@ -214,7 +227,7 @@
               </div>
             </a>
           </li>
-          <li class="works__project">
+          <li class="works__project" data-type="clone-coding">
             <a href="#" target="_blank">
               <img class="works__project__img" src="images/projects/project1.jpg" alt="포트폴리오 클론코딩 프로젝트">
               <div class="works__project__metadata">
@@ -223,7 +236,7 @@
               </div>
             </a>
           </li>
-          <li class="works__project">
+          <li class="works__project" data-type="my-coding">
             <a href="#" target="_blank">
               <img class="works__project__img" src="images/projects/project1.jpg" alt="포트폴리오 프로젝트">
               <div class="works__project__metadata">
@@ -232,7 +245,7 @@
               </div>
             </a>
           </li>
-          <li class="works__project">
+          <li class="works__project" data-type="my-coding">
             <a href="#" target="_blank">
               <img class="works__project__img" src="images/projects/project1.jpg" alt="창세계 기업 홈페이지 프로젝트">
               <div class="works__project__metadata">
@@ -241,7 +254,7 @@
               </div>
             </a>
           </li>
-          <li class="works__project">
+          <li class="works__project" data-type="my-coding">
             <a href="#" target="_blank">
               <img class="works__project__img" src="images/projects/project1.jpg" alt="크리스탈쏘잉 디자이너 홈페이지 프로젝트">
               <div class="works__project__metadata">
@@ -250,7 +263,7 @@
               </div>
             </a>
           </li>
-          <li class="works__project">
+          <li class="works__project" data-type="clone-coding">
             <a href="#" target="_blank">
               <img class="works__project__img" src="images/projects/project1.jpg" alt="게임 클론코딩 프로젝트">
               <div class="works__project__metadata">
@@ -259,7 +272,7 @@
               </div>
             </a>
           </li>
-          <li class="works__project">
+          <li class="works__project" data-type="clone-coding">
             <a href="#" target="_blank">
               <img class="works__project__img" src="images/projects/project1.jpg" alt="쇼핑목록 클론코딩 프로젝트">
               <div class="works__project__metadata">
@@ -268,7 +281,7 @@
               </div>
             </a>
           </li>
-          <li class="works__project">
+          <li class="works__project" data-type="my-coding">
             <a href="#" target="_blank">
               <img class="works__project__img" src="images/projects/project1.jpg" alt="쇼핑몰 홈페이지 프로젝트">
               <div class="works__project__metadata">
