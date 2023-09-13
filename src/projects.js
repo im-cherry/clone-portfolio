@@ -8,12 +8,19 @@ categories.addEventListener("click", (event) => {
   const filter = event.target.dataset.category;
   if (!filter) return;
 
-  // 활성화되는 카테고리 버튼 재설정
+  handleSelectedCategory(event.target); // 선택한 카테고리 버튼 재설정
+  filterProjects(filter); // 프로젝트 필터링
+});
+
+// 선택한 카테고리 버튼 재설정
+function handleSelectedCategory(target) {
   const selected = categories.querySelector(".selected");
   selected.classList.remove("selected");
-  event.target.classList.add("selected");
+  target.classList.add("selected");
+}
 
-  // 프로젝트 필터링
+// 프로젝트 필터링
+function filterProjects(filter) {
   projectsContainer.classList.add("anim-out");
   projects.forEach((project) => {
     project.dataset.type;
@@ -27,4 +34,4 @@ categories.addEventListener("click", (event) => {
   setTimeout(() => {
     projectsContainer.classList.remove("anim-out");
   }, 200);
-});
+}
